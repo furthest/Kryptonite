@@ -133,6 +133,16 @@
         LrR9HydpkCw4N/s/t16PO3wD4jbe7eaH4z0AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAO5JREFUWEftlrsKwkAQRZOvU7TI4ycsrOMDbH37faKFhXaKX6CF3oG7IcQhWGSS
+        FHvgEti95AxkWRJ4PDUQxnE8T5LkGUXRJU3TAdcbIYR4i3wKeSND7puiyV1O7Jgh8l1Jmgef5MqeCZVy
+        ZsRu7ciB2yvCPNjP2K2d1uUHTeri5Sbg5QtN6mIqF3C1PjSxxFwutD4AJDNN7oIBJ6yaIYdwo8ldOjEE
+        MmXXDLn/1yVpOe0PIWeGXTNkiFVZXEwnhkDG7JohB3OpiF1u7JlSNcSRHXN+hsC98MKzz/1GkCEyiO8Q
+        n/Fb3uO6x/MHQfAFOUleE57dmuYAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -217,16 +227,6 @@
 </value>
   </data>
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAO5JREFUWEftlrsKwkAQRZOvU7TI4ycsrOMDbH37faKFhXaKX6CF3oG7IcQhWGSS
-        FHvgEti95AxkWRJ4PDUQxnE8T5LkGUXRJU3TAdcbIYR4i3wKeSND7puiyV1O7Jgh8l1Jmgef5MqeCZVy
-        ZsRu7ciB2yvCPNjP2K2d1uUHTeri5Sbg5QtN6mIqF3C1PjSxxFwutD4AJDNN7oIBJ6yaIYdwo8ldOjEE
-        MmXXDLn/1yVpOe0PIWeGXTNkiFVZXEwnhkDG7JohB3OpiF1u7JlSNcSRHXN+hsC98MKzz/1GkCEyiO8Q
-        n/Fb3uO6x/MHQfAFOUleE57dmuYAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAAAO5JREFUWEftlrsKwkAQRZOvU7TI4ycsrOMDbH37faKFhXaKX6CF3oG7IcQhWGSS

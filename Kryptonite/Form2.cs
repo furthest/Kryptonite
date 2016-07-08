@@ -366,6 +366,7 @@ namespace Kryptonite
             textBox8.Text = "";
             textBox8.Visible = false;
             textBox7.Text = "";
+            label21.Text = "Inserisci chiave";
         }
 
         private void button9_Click(object sender, EventArgs e)
