@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kryptonite
-{ //Codice scritto da Gianmatteo Palmieri e Michele Bevilacqua
+{   //Codice scritto da Gianmatteo Palmieri e Michele Bevilacqua
     public partial class Form2 : Form
     {
 
@@ -335,6 +335,8 @@ namespace Kryptonite
                 label18.Visible = false;
                 label14.Visible = false;
             }
+
+           
         }
 
         private void label14_Click(object sender, EventArgs e)
@@ -528,6 +530,8 @@ namespace Kryptonite
             DialogResult dialog = openFileDialog1.ShowDialog();
             decryptText = openFileDialog1.FileName;
             textBox5.Text = decryptText;
+         
+            
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -626,6 +630,11 @@ namespace Kryptonite
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab("tabPage1");
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }
