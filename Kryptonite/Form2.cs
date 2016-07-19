@@ -325,15 +325,20 @@ namespace Kryptonite
             {
                 pictureBox9.Visible = true;
                 pictureBox11.Visible = true;
+                pictureBox19.Visible = true;
                 label18.Visible = true;
                 label14.Visible = true;
+                label29.Visible = true;
+
             }
             else
             {
                 pictureBox9.Visible = false;
                 pictureBox11.Visible = false;
+                pictureBox19.Visible = false;
                 label18.Visible = false;
                 label14.Visible = false;
+                label29.Visible = false;
             }
 
            
@@ -635,6 +640,103 @@ namespace Kryptonite
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage10");
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage2");
+            textBox9.Text = "";
+            textBox10.Text = "";
+        }
+
+        private void label30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox10.Text))
+            {
+                textBox9.Enabled = true;
+            }
+            else
+            {
+                textBox9.Enabled = false;
+            }
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox9.Text))
+            {
+                button11.Visible = true;
+                label31.Visible = true;
+                textBox9.Size = new Size(542, 25);
+            }
+            else
+            {
+                button11.Visible = false;
+                label31.Visible = false;
+                textBox9.Size = new Size(341, 25);
+            }
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (checkBox5.Checked == true)
+            {
+                textBox9.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox9.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage9");
+        }
+
+        private void tabPage10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage5");
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox11.Text))
+            {
+                button14.Visible = true;
+            }
+            else
+            {
+                button14.Visible = false;
+            }
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked == true)
+            {
+                textBox11.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox11.UseSystemPasswordChar = true;
+            }
         }
     }
 }
