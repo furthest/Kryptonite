@@ -819,5 +819,10 @@ namespace Kryptonite
                 MessageBox.Show("Non hai scelto nessun file da decriptare!", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Form2_Shown_1(object sender, EventArgs e)
+        {
+            label24.Text = "Versione: " + Assembly.GetEntryAssembly().GetName().Version.ToString();
+        }
     }
 }
