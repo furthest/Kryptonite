@@ -249,6 +249,7 @@
             this.label31.TabIndex = 22;
             this.label31.Text = "Copia chiave nella clipboard";
             this.label31.Visible = false;
+            this.label31.Click += new System.EventHandler(this.label31_Click);
             // 
             // button11
             // 
@@ -290,6 +291,7 @@
             this.button12.TabIndex = 19;
             this.button12.Text = " Oppure genera una chiave di 256 bit";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label32
             // 
@@ -1449,6 +1451,7 @@
             this.button14.Text = "Continua";
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Visible = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // textBox11
             // 
@@ -1458,6 +1461,7 @@
             this.textBox11.Size = new System.Drawing.Size(504, 25);
             this.textBox11.TabIndex = 25;
             this.textBox11.UseSystemPasswordChar = true;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // label34
             // 

@@ -725,7 +725,7 @@ namespace Kryptonite
 
         private void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox5.Checked == true)
+            if (checkBox6.Checked == true)
             {
                 textBox11.UseSystemPasswordChar = false;
             }
@@ -767,6 +767,55 @@ namespace Kryptonite
 
             tabControl1.SelectTab("tabPage2");
 
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            textBox9.Text = Random256Key();
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox9.Text))
+            {
+                System.Windows.Forms.Clipboard.SetText(textBox9.Text);
+            }
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox11.Text))
+            {
+                button14.Visible = true;
+            }
+            else
+            {
+                button14.Visible = false;
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(decryptText))
+            {
+                if (!string.IsNullOrWhiteSpace(textBox11.Text))
+                {
+                    string newFile = null;
+                    newFile = decryptText.Replace(".krypt", "");
+                    Kryptonite.Kryptons.DecryptFile(decryptText, newFile, textBox11.Text);
+                    ZipFile.ExtractToDirectory(newFile, newFile.Replace(".zip", ""));
+
+                }
+                else
+                {
+                    MessageBox.Show("Non hai inserito la chiave di decrittazione!", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Non hai scelto nessun file da decriptare!", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
