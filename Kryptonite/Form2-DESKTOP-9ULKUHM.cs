@@ -722,27 +722,14 @@ namespace Kryptonite
 
         }
 
-
-        private void checkBox6_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox5.Checked == true)
-            {
-                textBox11.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                textBox11.UseSystemPasswordChar = true;
-            }
-        }
-
-        private void button13_Click_1(object sender, EventArgs e)
+        private void button13_Click(object sender, EventArgs e)
         {
             DialogResult dialog = folderBrowserDialog1.ShowDialog();
             folderPath = folderBrowserDialog1.SelectedPath.ToString();
             textBox10.Text = folderPath;
         }
 
-        private void button11_Click_1(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e)
         {
             string zippedPath = null;
 
@@ -753,7 +740,7 @@ namespace Kryptonite
                     zippedPath = folderPath + ".zip";
                     ZipFile.CreateFromDirectory(folderPath, folderPath + ".zip");
                     Kryptonite.Kryptons.EncryptFile(zippedPath, zippedPath + ".krypt", textBox9.Text);
-                    Directory.Delete(folderPath, true);
+                    Directory.Delete(folderPath,true);
                 }
                 else
                 {
@@ -766,7 +753,6 @@ namespace Kryptonite
             }
 
             tabControl1.SelectTab("tabPage2");
-
         }
     }
 }
