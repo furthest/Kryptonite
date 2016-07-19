@@ -137,6 +137,8 @@ namespace Kryptonite
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab("tabPage2");
+            textBox1.Text = "";
+            textBox2.Text = "";
         }
 
         private void label3_Click_1(object sender, EventArgs e)
@@ -370,6 +372,7 @@ namespace Kryptonite
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab("tabPage5");
+            textBox6.Text = "";
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
@@ -823,6 +826,12 @@ namespace Kryptonite
         private void Form2_Shown_1(object sender, EventArgs e)
         {
             label24.Text = "Versione: " + Assembly.GetEntryAssembly().GetName().Version.ToString();
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage5");
+            textBox11.Text = "";
         }
     }
 }
