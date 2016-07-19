@@ -804,6 +804,8 @@ namespace Kryptonite
                     newFile = decryptText.Replace(".krypt", "");
                     Kryptonite.Kryptons.DecryptFile(decryptText, newFile, textBox11.Text);
                     ZipFile.ExtractToDirectory(newFile, newFile.Replace(".zip", ""));
+                    File.Delete(decryptText);
+                    File.Delete(newFile);
 
                 }
                 else
