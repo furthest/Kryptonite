@@ -15,6 +15,8 @@ namespace Kryptonite
         private const int BufferSize = 8192;
         private const string salt = "ph2DoYmgABfXlyD8JExHjdgfcUBaspNooUoCwtMolIi9jS8eWFedWTW77Sr3WIV";
 
+        public static bool isDecrypted = false;
+
 
         internal static byte[] EncryptStringToBytes(string text, byte[] key, byte[] iv)
         {
@@ -65,6 +67,8 @@ namespace Kryptonite
                             using (var srDecrypt = new StreamReader(csDecrypt))
                             {
                                 plaintext = srDecrypt.ReadToEnd();
+                                isDecrypted = true;
+
                             }
                         }
                     }

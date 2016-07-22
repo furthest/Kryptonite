@@ -402,7 +402,10 @@ namespace Kryptonite
                     if (!string.IsNullOrWhiteSpace(textBox7.Text))
                     {
                         textBox8.Text = KryptoToString(System.IO.File.ReadAllBytes(decryptText), textBox7.Text);
-                        textBox8.Visible = true;
+                        if(Kryptons.isDecrypted == true)
+                        {
+                            textBox8.Visible = true;
+                        }                      
                     }
                     else
                     {
