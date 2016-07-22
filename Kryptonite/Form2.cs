@@ -29,151 +29,6 @@ namespace Kryptonite
             InitializeComponent();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           
-
-        }   
-
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-           
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-          
-          
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-       
-        }
-
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-            
-           
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            tabControl1.SelectTab("tabPage2");
-        }
-
-        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            tabControl1.SelectTab("tabPage5");
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage1");
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage2");
-            textBox1.Text = "";
-            textBox2.Text = "";
-        }
-
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage3");
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-           if (!string.IsNullOrWhiteSpace(textBox3.Text))
-            {
-                button4.Visible = true;
-
-            }
-            else
-            {
-                button4.Visible = false;
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            panel1.Visible = true;
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(textBox3.Text))
@@ -213,175 +68,6 @@ namespace Kryptonite
                 label17.Visible = false;
                 textBox4.Size = new Size(316, 25);
             }
-        }
-
-        private void label4_Click_1(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage4");
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            panel1.Visible = false;
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage2");
-            textBox3.Text = "";
-        }
-
-        private void timer1_Tick_2(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBox1.Text))
-            {
-                textBox2.Enabled = true;
-            }
-            else
-            {
-                textBox2.Enabled = false;
-            }
-            
-        }
-
-        private void textBox2_TextChanged_1(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBox2.Text))
-            {
-                button3.Visible = true;
-                label16.Visible = true;
-                textBox2.Size = new Size(542, 25);
-            }
-            else
-            {
-                button3.Visible = false;
-                label16.Visible = false;
-                textBox2.Size = new Size(341, 25);
-            }
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            textBox2.Text = Random256Key();
-          
-
-        }
-
-        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked == true)
-            {
-                textBox2.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                textBox2.UseSystemPasswordChar = true;
-            }
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBox2.Text))
-            {
-                System.Windows.Forms.Clipboard.SetText(textBox2.Text);
-            }
-        }
-
-        private void textBox2_EnabledChanged(object sender, EventArgs e)
-        {
-            if (textBox2.Enabled == false)
-            {
-                button3.Visible = false;
-            }
-        }
-
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-            panel1.Visible = false;
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked == true)
-            {
-                textBox4.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                textBox4.UseSystemPasswordChar = true;
-            }
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBox4.Text))
-            {
-                System.Windows.Forms.Clipboard.SetText(textBox4.Text);
-            }
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(textBox5.Text))
-            {
-                pictureBox9.Visible = true;
-                pictureBox11.Visible = true;
-                pictureBox19.Visible = true;
-                label18.Visible = true;
-                label14.Visible = true;
-                label29.Visible = true;
-
-            }
-            else
-            {
-                pictureBox9.Visible = false;
-                pictureBox11.Visible = false;
-                pictureBox19.Visible = false;
-                label18.Visible = false;
-                label14.Visible = false;
-                label29.Visible = false;
-            }
-
-           
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage7");
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage6");
-
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-            textBox5.Text = "";
-            textBox6.Text = "";
-            tabControl1.SelectTab("tabPage1");
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage5");
-            textBox6.Text = "";
-        }
-
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab("tabPage5");
-            textBox8.Text = "";
-            textBox8.Visible = false;
-            textBox7.Text = "";
-            label21.Text = "Inserisci chiave";
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -484,21 +170,6 @@ namespace Kryptonite
             {
                 textBox6.UseSystemPasswordChar = true;
             }
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -614,18 +285,9 @@ namespace Kryptonite
                 MessageBox.Show("Non hai scelto nessun file da criptare.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-       tabControl1.SelectTab("tabPage2");
+            tabControl1.SelectTab("tabPage2");
         }
 
-        private void label5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
 
         public string Random256Key()
         {
@@ -650,10 +312,6 @@ namespace Kryptonite
             tabControl1.SelectTab("tabPage1");
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
 
         private void label29_Click(object sender, EventArgs e)
         {
@@ -716,18 +374,6 @@ namespace Kryptonite
         private void label28_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab("tabPage9");
-        }
-
-        private void tabPage10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Shown(object sender, EventArgs e)
-        {
-            
-
-
         }
 
 
@@ -835,5 +481,225 @@ namespace Kryptonite
             tabControl1.SelectTab("tabPage5");
             textBox11.Text = "";
         }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl1.SelectTab("tabPage2");
+        }
+
+        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl1.SelectTab("tabPage5");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage1");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage2");
+            textBox1.Text = "";
+            textBox2.Text = "";
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage3");
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox3.Text))
+            {
+                button4.Visible = true;
+
+            }
+            else
+            {
+                button4.Visible = false;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage4");
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage2");
+            textBox3.Text = "";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                textBox2.Enabled = true;
+            }
+            else
+            {
+                textBox2.Enabled = false;
+            }
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                button3.Visible = true;
+                label16.Visible = true;
+                textBox2.Size = new Size(542, 25);
+            }
+            else
+            {
+                button3.Visible = false;
+                label16.Visible = false;
+                textBox2.Size = new Size(341, 25);
+            }
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            textBox2.Text = Random256Key();
+
+
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                textBox2.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                System.Windows.Forms.Clipboard.SetText(textBox2.Text);
+            }
+        }
+
+        private void textBox2_EnabledChanged(object sender, EventArgs e)
+        {
+            if (textBox2.Enabled == false)
+            {
+                button3.Visible = false;
+            }
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+            {
+                textBox4.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox4.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox4.Text))
+            {
+                System.Windows.Forms.Clipboard.SetText(textBox4.Text);
+            }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox5.Text))
+            {
+                pictureBox9.Visible = true;
+                pictureBox11.Visible = true;
+                pictureBox19.Visible = true;
+                label18.Visible = true;
+                label14.Visible = true;
+                label29.Visible = true;
+
+            }
+            else
+            {
+                pictureBox9.Visible = false;
+                pictureBox11.Visible = false;
+                pictureBox19.Visible = false;
+                label18.Visible = false;
+                label14.Visible = false;
+                label29.Visible = false;
+            }
+
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage7");
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage6");
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = "";
+            textBox6.Text = "";
+            tabControl1.SelectTab("tabPage1");
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage5");
+            textBox6.Text = "";
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage5");
+            textBox8.Text = "";
+            textBox8.Visible = false;
+            textBox7.Text = "";
+            label21.Text = "Inserisci chiave";
+        }
+
     }
 }

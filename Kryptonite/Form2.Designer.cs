@@ -175,10 +175,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             this.SuspendLayout();
             // 
-            // toolTip1
-            // 
-            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -201,7 +197,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.Filter = "Kryptonite File | *.krypt";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // tabPage9
             // 
@@ -493,7 +488,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(589, 343);
             this.panel3.TabIndex = 11;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // textBox8
             // 
@@ -822,7 +816,6 @@
             this.label12.Size = new System.Drawing.Size(87, 25);
             this.label12.TabIndex = 4;
             this.label12.Text = "Decripta";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // pictureBox10
             // 
@@ -1178,7 +1171,6 @@
             this.label5.Size = new System.Drawing.Size(98, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Cripta file";
-            this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // pictureBox7
             // 
@@ -1437,7 +1429,6 @@
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "tabPage10";
             this.tabPage10.UseVisualStyleBackColor = true;
-            this.tabPage10.Click += new System.EventHandler(this.tabPage10_Click);
             // 
             // button14
             // 
@@ -1521,7 +1512,6 @@
             this.MinimumSize = new System.Drawing.Size(601, 369);
             this.Name = "Form2";
             this.Text = "Kryptonite";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.Shown += new System.EventHandler(this.Form2_Shown_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage9.ResumeLayout(false);
