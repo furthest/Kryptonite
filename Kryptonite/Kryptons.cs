@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -115,6 +116,35 @@ namespace Kryptonite
                 {
                     CopyStream(input, decryptedStream);
                     MessageBox.Show("File decriptato", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Errore durante la decrittazione, la chiave potrebbe essere sbagliata oppure il file potrebbe essere non valido!", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        internal static void DecryptFolder(string inputPath, string outputPath, string key)
+        {
+            var input = new FileStream(inputPath, FileMode.Open, FileAccess.Read);
+            var output = new FileStream(outputPath, FileMode.OpenOrCreate, FileAccess.Write);
+
+            var algorithm = new RijndaelManaged { KeySize = 256, BlockSize = 128 };
+            var hashedKey = new Rfc2898DeriveBytes(key, Encoding.ASCII.GetBytes(salt));
+
+            algorithm.Key = hashedKey.GetBytes(algorithm.KeySize / 8);
+            algorithm.IV = hashedKey.GetBytes(algorithm.BlockSize / 8);
+
+            try
+            {
+                using (var decryptedStream = new CryptoStream(output, algorithm.CreateDecryptor(), CryptoStreamMode.Write))
+                {
+                    CopyStream(input, decryptedStream);
+                    ZipFile.ExtractToDirectory(outputPath, outputPath.Replace(".zip", ""));
+                    File.Delete(inputPath);
+                    File.Delete(outputPath);
+                    MessageBox.Show("Cartella decriptata.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
             }

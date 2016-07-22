@@ -590,6 +590,8 @@ namespace Kryptonite
             return decryptedString;
         }
 
+
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(cryptFile))
@@ -806,11 +808,7 @@ namespace Kryptonite
                 {
                     string newFile = null;
                     newFile = decryptText.Replace(".krypt", "");
-                    Kryptonite.Kryptons.DecryptFile(decryptText, newFile, textBox11.Text);
-                    ZipFile.ExtractToDirectory(newFile, newFile.Replace(".zip", ""));
-                    File.Delete(decryptText);
-                    File.Delete(newFile);
-
+                    Kryptonite.Kryptons.DecryptFolder(decryptText, newFile, textBox11.Text);
                 }
                 else
                 {
