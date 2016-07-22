@@ -1416,10 +1416,10 @@
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage10);
-            this.tabControl1.Location = new System.Drawing.Point(0, -6);
+            this.tabControl1.Location = new System.Drawing.Point(0, -22);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(592, 323);
+            this.tabControl1.Size = new System.Drawing.Size(592, 339);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage10
@@ -1433,7 +1433,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(584, 297);
+            this.tabPage10.Size = new System.Drawing.Size(584, 313);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "tabPage10";
             this.tabPage10.UseVisualStyleBackColor = true;

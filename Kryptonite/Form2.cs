@@ -757,6 +757,7 @@ namespace Kryptonite
                     ZipFile.CreateFromDirectory(folderPath, folderPath + ".zip");
                     Kryptonite.Kryptons.EncryptFile(zippedPath, zippedPath + ".krypt", textBox9.Text);
                     Directory.Delete(folderPath, true);
+                    zippedPath = folderPath + ".krypt";
                 }
                 else
                 {
