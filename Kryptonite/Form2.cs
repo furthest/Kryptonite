@@ -88,7 +88,7 @@ namespace Kryptonite
                     if (!string.IsNullOrWhiteSpace(textBox7.Text))
                     {
                         textBox8.Text = KryptoToString(System.IO.File.ReadAllBytes(decryptText), textBox7.Text);
-                        if(Kryptons.isDecrypted == true)
+                        if (Kryptons.isDecrypted == true)
                         {
                             textBox8.Visible = true;
                         }                      
@@ -409,6 +409,7 @@ namespace Kryptonite
                     Kryptonite.Kryptons.EncryptFile(zippedPath, zippedPath + ".krypt", textBox9.Text);
                     Directory.Delete(folderPath, true);
                     zippedPath = folderPath + ".krypt";
+
                 }
                 else
                 {
@@ -701,5 +702,9 @@ namespace Kryptonite
             label21.Text = "Inserisci chiave";
         }
 
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
